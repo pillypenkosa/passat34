@@ -1,3 +1,13 @@
+const appProjectName = 'VW B3/B4';
+
+
+
+
+
+
+
+
+
 // подсветка кнопок
 function btnLight( container, id ) { 	// container - блок, где расположены кнопки 		// data-id - идентификатор конкретной кнопки
 

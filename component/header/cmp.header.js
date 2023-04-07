@@ -24,7 +24,7 @@ class ComponentHeader {
 				//{ k: 'selected' 	, v: '' 						, },
 				//{ k: 'defer' 		, v: '' 						, },
 			], 
-			innerHTML: `VW Passat B3/B4 YouTube`, 
+			innerHTML: `VW Passat B3/B4 YouTube ${ appVersion }`, 
 		});
 	}
 

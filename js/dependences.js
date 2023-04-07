@@ -18,7 +18,7 @@ const dependences = {
 
 	listApp: [ 		// list/list. ${ k } .js
 
-		'youtube',
+		'youtube.cars',
 	],
 
 };

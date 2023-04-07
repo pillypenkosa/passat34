@@ -66,7 +66,7 @@ class ComponentListVideo {
 		let hashtags = '';
 		for ( let k in objYoutube[ elem.dataset.id ].hash ) {
 
-			hashtags += `#${ objYoutubeNav[ k ].title } `;
+			hashtags += `#${ objYoutubeNav[ k ].hash } `;
 		}
 		
 

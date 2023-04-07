@@ -2,51 +2,80 @@ const arrYoutubeNav = [
 
 
 
-{ id: 'review' 			, title: 'Обзор' 					, descr: 'Обзоры' 									, },
-{ id: 'body' 			, title: 'Кузов' 					, descr: 'Кузов' 									, },
-{ id: 'b3' 				, title: 'B3' 						, descr: 'B3 1988-1993' 							, },
-{ id: 'b4' 				, title: 'B4' 						, descr: 'B4 1993-1997' 							, },
-{ id: 'sedan' 			, title: 'Седан' 					, descr: 'Седан' 									, },
-{ id: 'wagon' 			, title: 'Универсал' 				, descr: 'Универсал' 								, },
-{ id: 'lkp' 			, title: 'ЛКП' 						, descr: 'Лако-красочное покрытие' 					, },
+{ id: 'b3' 				, title: 'Passat B3' 			, hash: 'B3' 			, descr: 'VW Passat B3 1988-1993' 					, },
+{ id: 'b4' 				, title: 'Passat B4' 			, hash: 'B4' 			, descr: 'VW Passat B4 1993-1997' 					, },
+{ id: 'review' 			, title: 'Обзоры' 				, hash: 'Обзор' 		, descr: 'Обзоры' 									, },
+{ id: 'testdrive' 		, title: 'Тест-драйв' 			, hash: 'Тестдрайв' 	, descr: 'Тест-драйв' 								, },
+{ id: 'repair' 			, title: 'Ремонт' 				, hash: 'Ремонт' 		, descr: 'Ремонт' 									, },
+{ id: 'diagnostics' 	, title: 'Диагностика' 			, hash: 'Диагностика' 	, descr: 'Диагностика' 								, },
+{ id: 'tuning' 			, title: 'Тюнинг' 				, hash: 'Тюнинг' 		, descr: 'Тюнинг' 									, },
+{ id: 'sedan' 			, title: 'Седан' 				, hash: 'Седан' 		, descr: 'Седан' 									, },
+{ id: 'wagon' 			, title: 'Универсал' 			, hash: 'Универсал' 	, descr: 'Универсал' 								, },
+{ id: 'benzin' 			, title: 'Бензин' 				, hash: 'Бензин' 		, descr: 'Топливо: бензин' 							, },
+{ id: 'gas' 			, title: 'Газ' 					, hash: 'Газ' 			, descr: 'Топливо: газ' 							, },
+{ id: 'diesel' 			, title: 'Дизель' 				, hash: 'Дизель' 		, descr: 'Топливо: дизель' 							, },
+{ id: 'turbo' 			, title: 'Turbo' 				, hash: 'Turbo' 		, descr: 'Турбо' 									, },
+{ id: '_4x4' 			, title: 'Полный привод' 		, hash: 'ПолныйПривод' 	, descr: 'Полный привод' 							, },
 
-{ id: 'engine' 			, title: 'Двигатель' 				, descr: 'Двигатель' 								, },
-{ id: 'gas' 			, title: 'Газ' 						, descr: 'Топливо: газ' 							, },
-{ id: 'benzin' 			, title: 'Бензин' 					, descr: 'Топливо: бензин' 							, },
-{ id: 'diesel' 			, title: 'Дизель' 					, descr: 'Топливо: дизель' 							, },
-{ id: 'v8' 				, title: 'v8' 						, descr: '8 клапанов' 								, },
-{ id: 'v16' 			, title: 'v16' 						, descr: '8 клапанов' 								, },
-{ id: 'l16' 			, title: '1.6' 						, descr: 'Объем двигателя 1.6 л' 					, },
-{ id: 'l18' 			, title: '1.8' 						, descr: 'Объем двигателя 1.8 л' 					, },
-{ id: 'l19' 			, title: '1.9' 						, descr: 'Объем двигателя 1.9 л' 					, },
-{ id: 'l20' 			, title: '2.0' 						, descr: 'Объем двигателя 2.0 л' 					, },
-{ id: 'l28' 			, title: '2.8' 						, descr: 'Объем двигателя 2.8 л' 					, },
-{ id: 'ee' 				, title: '2E' 						, descr: 'Двигатель 2E' 							, },
-{ id: 'abf' 			, title: 'ABF' 						, descr: 'Двигатель ABF' 							, },
-{ id: 'agg' 			, title: 'AGG' 						, descr: 'Двигатель AGG' 							, },
-{ id: 'pg' 				, title: 'PG' 						, descr: 'Двигатель PG G60' 						, },
+{ id: 'body' 			, title: '--- Кузов ---' 		, hash: 'Кузов' 		, descr: 'Кузов' 									, },
+{ id: 'lkp' 			, title: 'ЛКП' 					, hash: 'ЛКП' 			, descr: 'Лако-красочное покрытие' 					, },
 
-{ id: 'monojetronic' 	, title: 'MonoJetronic' 			, descr: 'Mono-Jetronic' 							, },
-{ id: 'turbo' 			, title: 'Turbo' 					, descr: 'Турбо' 									, },
+{ id: 'engine' 			, title: '--- Двигатель ---' 	, hash: 'Двигатель' 	, descr: 'Двигатель' 								, },
+{ id: 'v8' 				, title: '8 клапанов' 			, hash: 'v8' 			, descr: '8 клапанов' 								, },
+{ id: 'v16' 			, title: '16 клапанов' 			, hash: 'v16' 			, descr: '8 клапанов' 								, },
+{ id: 'l16' 			, title: '1.6 л' 				, hash: '1.6' 			, descr: 'Объем двигателя 1.6 л' 					, },
+{ id: 'l18' 			, title: '1.8 л' 				, hash: '1.8' 			, descr: 'Объем двигателя 1.8 л' 					, },
+{ id: 'l19' 			, title: '1.9 л' 				, hash: '1.9' 			, descr: 'Объем двигателя 1.9 л' 					, },
+{ id: 'l20' 			, title: '2.0 л' 				, hash: '2.0' 			, descr: 'Объем двигателя 2.0 л' 					, },
+{ id: 'l28' 			, title: '2.8 л' 				, hash: '2.8' 			, descr: 'Объем двигателя 2.8 л' 					, },
+{ id: 'l29' 			, title: '2.9 л' 				, hash: '2.8' 			, descr: 'Объем двигателя 2.8 л' 					, },
+{ id: '_2e' 			, title: '2E' 					, hash: '2E' 			, descr: 'Двигатель 2E' 							, },
+{ id: '_9a' 			, title: '9A' 					, hash: '9A' 			, descr: 'Двигатель 9A' 							, },
+{ id: 'aaa' 			, title: 'AAA' 					, hash: 'AAA' 			, descr: 'Двигатель AAA' 							, },
+{ id: 'abf' 			, title: 'ABF' 					, hash: 'ABF' 			, descr: 'Двигатель ABF' 							, },
+{ id: 'abs' 			, title: 'ABS' 					, hash: 'ABS' 			, descr: 'Двигатель ABS' 							, },
+{ id: 'abv' 			, title: 'ABV' 					, hash: 'ABV' 			, descr: 'Двигатель ABV' 							, },
+{ id: 'agg' 			, title: 'AGG' 					, hash: 'AGG' 			, descr: 'Двигатель AGG' 							, },
+{ id: 'ady' 			, title: 'ADY' 					, hash: 'ADY' 			, descr: 'Двигатель ADY' 							, },
+{ id: 'kr' 				, title: 'KR' 					, hash: 'KR' 			, descr: 'Двигатель KR' 							, },
+{ id: 'pb' 				, title: 'PB' 					, hash: 'PB' 			, descr: 'Двигатель PB' 							, },
+{ id: 'pf' 				, title: 'PF' 					, hash: 'PF' 			, descr: 'Двигатель PF' 							, },
+{ id: 'pg' 				, title: 'PG' 					, hash: 'PG' 			, descr: 'Двигатель PG G60' 						, },
+{ id: 'rp' 				, title: 'RP' 					, hash: 'RP' 			, descr: 'Двигатель RP' 							, },
+{ id: 'g60' 			, title: 'G60' 					, hash: 'G60' 			, descr: 'G60' 										, },
+{ id: 'syncro' 			, title: 'Syncro' 				, hash: 'Syncro' 		, descr: 'Syncro' 									, },
+{ id: 'vr6' 			, title: 'VR6' 					, hash: 'VR6' 			, descr: 'VR6' 										, },
 
-{ id: 'lpg2' 			, title: 'ГБО2' 					, descr: 'ГБО 2 поколения' 							, },
-{ id: 'lpg4' 			, title: 'ГБО4' 					, descr: 'ГБО 4 поколения' 							, },
+{ id: 'kjetronic' 		, title: 'K-Jetronic' 			, hash: 'KJetronic' 	, descr: 'K-Jetronic' 								, },
+{ id: 'monojetronic' 	, title: 'Mono-Jetronic' 		, hash: 'MonoJetronic' 	, descr: 'Mono-Jetronic' 							, },
 
-{ id: 'gearbox' 		, title: 'КПП' 						, descr: 'Коробка передач' 							, },
-{ id: 'gearbox_a' 		, title: 'АКПП' 					, descr: 'Коробка-автомат' 							, },
-{ id: 'gearbox_m' 		, title: 'МКПП' 					, descr: 'Механическая коробка передач' 			, },
+{ id: 'lpg2' 			, title: 'ГБО 2' 				, hash: 'ГБО2' 			, descr: 'ГБО 2 поколения' 							, },
+{ id: 'lpg4' 			, title: 'ГБО 4' 				, hash: 'ГБО4' 			, descr: 'ГБО 4 поколения' 							, },
 
-{ id: 'clutch' 			, title: 'Сцепление' 				, descr: 'Сцепление' 								, },
+{ id: 'ignition' 		, title: 'Зажигание' 			, hash: 'Зажигание' 	, descr: 'Зажигание' 								, },
+{ id: 'sparks' 			, title: 'Свечи' 				, hash: 'Свечи' 		, descr: 'Свечи зажигания' 							, },
+{ id: 'gearbox' 		, title: '--- КПП ---' 			, hash: 'КПП' 			, descr: 'Коробка передач' 							, },
+{ id: 'gearbox_a' 		, title: 'АКПП' 				, hash: 'АКПП' 			, descr: 'Коробка-автомат' 							, },
+{ id: 'gearbox_m' 		, title: 'МКПП' 				, hash: 'МКПП' 			, descr: 'Механическая коробка передач' 			, },
+{ id: 'clutch' 			, title: 'Сцепление' 			, hash: 'Сцепление' 	, descr: 'Сцепление' 								, },
 
-{ id: 'sensors' 		, title: 'Датчики' 					, descr: 'Датчики' 									, },
-{ id: 'sensorsDmrv' 	, title: 'ДМРВ' 					, descr: 'Датчик массового расхода воздуха' 		, },
-{ id: 'sensorsDpdz' 	, title: 'ДПДЗ' 					, descr: 'Датчик положения дроссельной заслонки' 	, },
+{ id: 'accumulator' 	, title: 'Аккумулятор' 			, hash: 'Аккумулятор' 	, descr: 'Аккумулятор' 								, },
+{ id: 'generator' 		, title: 'Генератор' 			, hash: 'Генератор' 	, descr: 'Генератор' 								, },
+{ id: 'coil' 			, title: 'Катушка' 				, hash: 'Катушка' 		, descr: 'Катушка' 									, },
+{ id: 'starter' 		, title: 'Стартер' 				, hash: 'Стартер' 		, descr: 'Стартер' 									, },
 
-{ id: 'brakes' 			, title: 'Тормоз' 					, descr: 'Тормоз' 									, },
 
-{ id: 'diagnostics' 	, title: 'Диагностика' 				, descr: 'Диагностика' 								, },
-{ id: 'testdrive' 		, title: 'Тестдрайв' 				, descr: 'Тест-драйв' 								, },
-{ id: 'tuning' 			, title: 'Тюнинг' 					, descr: 'Тюнинг' 									, },
+{ id: 'sensors' 		, title: '--- Датчики ---' 		, hash: 'Датчики' 		, descr: 'Датчики' 									, },
+{ id: 'sensorsDmrv' 	, title: 'ДМРВ' 				, hash: 'ДМРВ' 			, descr: 'Датчик массового расхода воздуха' 		, },
+{ id: 'sensorsDpdz' 	, title: 'ДПДЗ' 				, hash: 'ДПДЗ' 			, descr: 'Датчик положения дроссельной заслонки' 	, },
+{ id: 'brakes' 			, title: 'Тормоз' 				, hash: 'Тормоз' 		, descr: 'Тормоз' 									, },
+{ id: 'gaspump' 		, title: 'Бензонасос' 			, hash: 'Бензонасос' 	, descr: 'Бензонасос' 								, },
+
+
+
+
+
+
 
 
 
@@ -66,17 +95,22 @@ const arrYoutube = [
 
 
 { 
-	title: 'B3 1.8 Turbo PG G60 универсал. Полный привод', ch: 'iling show',
-	id: 'OEoAvdItyHo', href: 'OEoAvdItyHo',
-	hash: { b3:1, l18:1, pg:1, turbo:1, wagon:1, review:1, }, 
-},
-{ 
-	title: 'B3 1.8 седан. Авто до 100 тыс. рублей', ch: '#Всёобовсем#',
+	title: 'B3 1.8 v8 АКПП седан. Обзор. Авто до 100 тыс. рублей', ch: '#Всёобовсем#',
 	id: 'lHxTfjp_HSc', href: 'lHxTfjp_HSc',
-	hash: { b3:1, l18:1, v8:1, benzin:1, sedan:1, review:1, }, 
+	hash: { review:1, b3:1, l18:1, v8:1, benzin:1, gearbox_a:1, sedan:1,  }, 
 },
 { 
-	title: 'B3 1.8 седан. Капсула времени. Идеальный с конфиската', ch: 'PRO100 DIMA',
+	title: 'B3 1.8 v8 Turbo PG G60 бензин универсал. Полный привод. Обзор. Тест-драйв. Компрессор и полный привод уже с завода', ch: 'iling show',
+	id: 'OEoAvdItyHo', href: 'OEoAvdItyHo',
+	hash: { b3:1, l18:1, v8:1, pg:1, g60:1, turbo:1, benzin:1, wagon:1, review:1, testdrive:1, }, 
+},
+{ 
+	title: 'B3 1.8 v16 K-Jetronic бензин седан. Ремонт. Не заводится. Ищем причину.', ch: 'VK Garage',
+	id: 'Gtq9m1IaoqA', href: 'Gtq9m1IaoqA',
+	hash: { b3:1, l18:1, v16:1, kjetronic:1, benzin:1, sedan:1, repair:1, }, 
+},
+{ 
+	title: 'B3 1.8 седан. Обзор. Капсула времени. Идеальный с конфиската', ch: 'PRO100 DIMA',
 	id: 'z6ooXGIuF3c', href: 'z6ooXGIuF3c',
 	hash: { b3:1, review:1, }, 
 },
@@ -98,18 +132,21 @@ const arrYoutube = [
 { 
 	title: 'B3 2.0 2E седан. Жизнь (про поломки)', ch: 'VoronoV',
 	id: 'Z9K2o0frPXQ', href: 'Z9K2o0frPXQ',
-	hash: { b3:1, l20:1, ee:1, v8:1, sedan:1, review:1, }, 
+	hash: { b3:1, l20:1, _2e:1, v8:1, sedan:1, review:1, }, 
 },
 { 
-	title: 'B3 2.0 ABF универсал. Описание', ch: 'Web Mebli',
+	title: 'B3 2.0 v16 ABF универсал. Описание', ch: 'Web Mebli',
 	id: 'Sv6Zy0K3yHQ', href: 'Sv6Zy0K3yHQ',
 	hash: { b3:1, l20:1, v16:1, abf:1, benzin:1, gearbox_m:1, wagon:1, review:1, }, 
 },
 { 
-	title: 'B3 2.0 ABF Turbo. Тюнинг. Тест-драйв', ch: 'VoronoV',
+	title: 'B3 2.0 v16 ABF Turbo. Тюнинг. Тест-драйв', ch: 'VoronoV',
 	id: 'ipJDcQo4CVs', href: 'ipJDcQo4CVs',
 	hash: { b3:1, l20:1, turbo:1, v16:1, abf:1, wagon:1, review:1, testdrive:1, tuning:1, }, 
 },
+
+
+
 { 
 	title: 'B3 cедан. Обзор', ch: 'Серега AvtokuzoV',
 	id: 'y1heZO7NpDs', href: 'y1heZO7NpDs',
@@ -125,6 +162,49 @@ const arrYoutube = [
 	id: 'w-uvsk0DikA', href: 'w-uvsk0DikA',
 	hash: { b3:1, sedan:1, body:1, lkp:1, }, 
 },
+
+
+{ 
+	title: 'B4. Крыло переднее. Как снять', ch: 'cbr600rr блог',
+	id: '9Ri_SnPEzbg', href: '9Ri_SnPEzbg',
+	hash: { repair:1, b3:1, b4:1, body:1, }, 
+},
+{ 
+	title: 'B4. В титан. Много сварки 1', ch: 'изХлама',
+	id: 'rCGDKZcnJS0', href: 'rCGDKZcnJS0',
+	hash: { repair:1, b3:1, b4:1, body:1, }, 
+},
+{ 
+	title: 'B4. В титан. Много сварки 2', ch: 'изХлама',
+	id: 'ZUfWOxMOfYo', href: 'ZUfWOxMOfYo',
+	hash: { repair:1, b3:1, b4:1, body:1, }, 
+},
+{ 
+	title: 'B4. В титан. Мелкая шагрень', ch: 'изХлама',
+	id: 'jamxEHEW6UU', href: 'jamxEHEW6UU',
+	hash: { repair:1, b3:1, b4:1, body:1, }, 
+},
+{ 
+	title: 'B4. Восттановление, покраска, антикор Второе дыхание', ch: 'изХлама',
+	id: 'Vlt-pUeKqWA', href: 'Vlt-pUeKqWA',
+	hash: { repair:1, b3:1, b4:1, body:1, }, 
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 { 
 	title: 'B3 универсал. Живые есть', ch: 'Лучше Ездить',
 	id: 'th0NWHWM99E', href: 'th0NWHWM99E',
@@ -201,65 +281,128 @@ const arrYoutube = [
 	hash: { b4:1, l18:1, v8:1, benzin:1, wagon:1, review:1, }, 
 },
 { 
-	title: 'B4. 1.9. TD против Audi A6 2.4 Quattro', ch: 'ProstoRomka',
+	title: 'B4 1.9 TD против Audi A6 2.4 Quattro', ch: 'ProstoRomka',
 	id: '56H9qvAWIzE', href: '56H9qvAWIzE',
 	hash: { b4:1, l19:1, turbo:1, diesel:1, review:1, testdrive:1, }, 
 },
-
-
-
-
-
-
 { 
-	title: 'Двигатель 2E. Golf. Сборка 1', ch: 'Андрей Козлов',
-	id: 'nBMNNRteEOY', href: 'nBMNNRteEOY',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	title: 'B4 2.0 ADY 8. 1995 год. Рассказ', ch: 'Моя AUDI-тория',
+	id: 'Fwq_pty5swk', href: 'Fwq_pty5swk',
+	hash: { b4:1, ady:1, review:1, }, 
 },
-{ 
-	title: 'Двигатель 2E. Golf. Сборка 2', ch: 'Андрей Козлов',
-	id: 'JBmCpineixA', href: 'JBmCpineixA',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
-},
+
+
+
+
+
 { 
 	title: 'Двигатель 2E. ГБО 2', ch: 'Жизнь Авто',
 	id: 'n32j7hCwqQA', href: 'n32j7hCwqQA',
-	hash: { b4:1, ee:1, l20:1, v8:1, benzin:1, engine:1, gas:1, lpg2:1, }, 
+	hash: { b4:1, _2e:1, l20:1, v8:1, benzin:1, engine:1, gas:1, lpg2:1, }, 
 },
 { 
 	title: 'Двигатель 2E. ГБЦ. Прокладка. Замена', ch: 'владимир 04 регион',
 	id: '1ao678owDL8', href: '1ao678owDL8',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
-},
-{ 
-	title: 'Двигатель 2E. Лечим нестабильный холостой ход', ch: 'lamanov YT',
-	id: 'JzrsBtxJGYg', href: 'rOBgACZE8HI',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, diagnostics:1, }, 
-},
-{ 
-	title: 'Двигатель 2E. Плохо заводится. Долго запускается', ch: 'MECHANDOS',
-	id: 'o6lmtCrkI9g', href: 'o6lmtCrkI9g',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
 },
 { 
 	title: 'Двигатель 2E. ГРМ. Ремень. Замена', ch: 'НЕ БОЙСЯ И ТВОРИ',
 	id: 'C5sSE7Q7z0U', href: 'C5sSE7Q7z0U',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
 },
 { 
 	title: 'Двигатель 2E. Дроссель', ch: 'Александр Копейкин',
 	id: 'H-li6avu7rU', href: 'H-li6avu7rU',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Заводится плохо', ch: 'MECHANDOS',
+	id: 'o6lmtCrkI9g', href: 'o6lmtCrkI9g',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
+},
+
+
+
+
+
+{ 
+	title: 'Двигатель 2E. Катушка. Почему перегорает', ch: 'MECHANDOS',
+	id: 'CFUCNNgHtw4', href: 'CFUCNNgHtw4',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, coil:1, }, 
+},
+
+
+
+
+
+
+{ 
+	title: 'Двигатель 2E. Клапан вентиляции картерных газов', ch: 'Жизнь Авто',
+	id: 'FuRyxAeDvno', href: 'FuRyxAeDvno',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1,  }, 
+},
+{ 
+	title: 'Двигатель 2E. Обороты плавают. Троит', ch: 'ИльдарKZ',
+	id: 'wLj8R4IzGcU', href: 'wLj8R4IzGcU',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, diagnostics:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Обороты холостые стабильные', ch: 'Олег Александров',
+	id: 'etRjOJLeh84', href: 'etRjOJLeh84',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, diagnostics:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Помпа. Замена', ch: 'Can You? Do It!',
+	id: 'bTntYqw1Fss', href: 'bTntYqw1Fss',
+	hash: { b3:1, l20:1, _2e:1, v8:1, }, 
 },
 { 
 	title: 'Двигатель 2E. Разборка', ch: 'LMV',
 	id: 'IBGf68KZ0_U', href: 'IBGf68KZ0_U',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Сборка 1. Golf', ch: 'Андрей Козлов',
+	id: 'nBMNNRteEOY', href: 'nBMNNRteEOY',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Сборка 2. Golf', ch: 'Андрей Козлов',
+	id: 'JBmCpineixA', href: 'JBmCpineixA',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
 },
 { 
 	title: 'Двигатель 2E. Трубки вакуумные. Правильное подключение', ch: 'lamanov YT',
 	id: '1j5KHWL9sqY', href: '1j5KHWL9sqY',
-	hash: { b4:1, l20:1, v8:1, ee:1, engine:1, }, 
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Ход холостой нестабильный. Лечим', ch: 'lamanov YT',
+	id: 'JzrsBtxJGYg', href: 'rOBgACZE8HI',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, diagnostics:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Форсунки. Снятие', ch: 'tashki',
+	id: 'YUyS2sEPxZg', href: 'YUyS2sEPxZg',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, diagnostics:1, }, 
+},
+{ 
+	title: 'Двигатель 2E. Форсунки. Чистка', ch: 'Losev Garage',
+	id: '8a3LgV6q2gE', href: '8a3LgV6q2gE',
+	hash: { b4:1, l20:1, v8:1, _2e:1, engine:1, diagnostics:1, }, 
+},
+
+
+
+
+
+
+
+
+{ 
+	title: 'Двигатель 2E/AGG. Стартер. Щетки. Замена', ch: 'GarageLip',
+	id: 'QWr2bkFfFCk', href: 'QWr2bkFfFCk',
+	hash: { b4:1, l20:1, v8:1, _2e:1, agg:1, engine:1, starter:1, }, 
 },
 
 
@@ -273,10 +416,91 @@ const arrYoutube = [
 
 
 { 
-	title: 'B3. Двигатель. Mono-Jetronic. Решение проблемы', ch: 'ТехноМастер',
+	title: 'Двигатель. Mono-Jetronic. Решение проблемы', ch: 'ТехноМастер',
 	id: 'x78uOR-FLTk', href: 'x78uOR-FLTk',
-	hash: { b3: 1, l18:1, v8:1, sedan:1, engine:1, monojetronic:1, }, 
+	hash: { l18:1, v8:1, sedan:1, engine:1, monojetronic:1, }, 
 },
+
+
+
+
+
+
+		
+
+/*
+{ 
+	title: '', ch: '',
+	id: '', href: '',
+	hash: { b4:1, }, 
+},
+
+
+*/
+
+
+{ 
+	title: 'Замена сальников валов двигателя', ch: 'AndRamons',
+	id: 'ypPVtvlpXZk', href: 'ypPVtvlpXZk',
+	hash: { repair:1, b3:1, engine:1, }, 
+},
+
+
+
+
+
+
+/*
+
+
+6r3wwrJFXe0 "> Заслонка зима/лето. Переключение. Проверка (B3 Д.Мазницын)</A>
+xJRDScZw9LY "> Зуммер. Пищит  на трассе (B3 RP)</A>
+ZhKf6ZfgXKg "> Капремонт 1 (B3 PF В.Кравченко)</A>
+hgRVvWfZr0o "> Капремонт 2. ГБЦ. Ремонт/сборка (B3 PF В.Кравченко)</A>
+2QtBqCpKv2I "> Капремонт 3. Сборка (B3 PF В.Кравченко)</A>
+
+
+
+
+
+xjfVxeGIw7g "> Клапан. Втулка направляющая. Замена (B3)</A>
+FuRyxAeDvno "> Клапан вентиляции картерных газов. Замена (2E)</A>
+2NlpRoFE8Lc "> Насос масляный. Замена (B3)</A>
+JtZxZn9dJec "> Номер. Где выбит</A>
+YQS2_RyIfFg "> Опора передняя. Замена (B3)</A>
+m2WfhY_YuEY "> Перегрев 1 (B3)</A>
+rvic6Tp3GWY "> Перегрев 2 (B3)</A>
+HLz6q470h1U "> Плавают обороты (B3 Д.Мазницын)</A>
+xcIp0v68Oj0 "> Разоборка (B3)</A>
+eaAvCPpKgDE "> Форсунка. Проверка на герметичность (B3 Д.Мазницын)</A>
+UfMORGLJywU "> Форсунка. Проверка работоспособности (B3 Д.Мазницын)</A>
+                  </DL>
+
+
+*/
+
+
+
+
+
+
+
+
+
+{ 
+	title: 'Ход холостой нестабильный. Реле 30', ch: 'МЕХАНИК без ПОНТОВ',
+	id: 'RZnrpEhIxqc', href: 'RZnrpEhIxqc',
+	hash: { b3:1, b4:1, diagnostics:1, }, 
+},
+
+
+
+
+
+
+
+
+
 { 
 	title: 'B4. Тормоза новые', ch: 'Vitali Burak',
 	id: '2w_zbzT9Tdg', href: '2w_zbzT9Tdg',
@@ -360,7 +584,7 @@ const arrYoutube = [
 { 
 	title: '2Е. Обзор', ch: 'ИльдарKZ',
 	id: 'rCPKpKbkO-U', href: 'rCPKpKbkO-U',
-	hash: { b4:1, ee:1, v8:1, benzin:1, engine:1, review:1, }, 
+	hash: { b4:1, _2e:1, v8:1, benzin:1, engine:1, review:1, }, 
 },
 
 
@@ -600,10 +824,72 @@ const arrYoutube = [
 	id: 'sLaqztwsMEE', href: 'sLaqztwsMEE',
 	hash: { b4:1, sensors: 1, }, 
 },
+{ 
+	title: 'B3. Зажигание. Замок. Контактная группа. Замена', ch: 'КАS 6 russian garage',
+	id: 'RIHA0V397sI', href: 'RIHA0V397sI',
+	hash: { b3:1, ignition:1, }, 
+},
+{ 
+	title: 'B3. Зажигание. Замок. Контактная группа. Замена', ch: 'Дмитрий Мазницын',
+	id: 'uKz6P5lI1Hg', href: 'uKz6P5lI1Hg',
+	hash: { b3:1, ignition:1, }, 
+},
+{ 
+	title: 'B3/B4. Зажигание. Замок. Разборка', ch: 'lkw7',
+	id: 'HBnKWK2HoWE', href: 'HBnKWK2HoWE',
+	hash: { b3:1, b4:1, ignition:1, }, 
+},
+{ 
+	title: 'B3/B4 2.0 8 2E. Зажигание. Угол. Установка', ch: 'Развин Дмитрий',
+	id: 'iNvokiM5850', href: 'iNvokiM5850',
+	hash: { b3:1, _2e:1, ignition:1, }, 
+},
+{ 
+	title: 'Свечи. Искра. Проверка', ch: 'Дмитрий Мазницын',
+	id: 'U4I8KX5zzLY', href: 'U4I8KX5zzLY',
+	hash: { b4:1, sparks:1, }, 
+},
+{ 
+	title: 'Свечи. Заливает. Богатая смесь', ch: 'Дмитрий Мазницын',
+	id: 'n2VktnOSVZI', href: 'n2VktnOSVZI',
+	hash: { b4:1, sparks:1, }, 
+},
+{ 
+	title: 'Свечи. Провода. Сопротивление', ch: 'Дмитрий Мазницын',
+	id: 'Ztds_CEA7lw', href: 'Ztds_CEA7lw',
+	hash: { b4:1, sparks:1, }, 
+},
+{ 
+	title: 'B3/B4. Бензонасос. Замена', ch: 'v_i_t_a_l_y',
+	id: 'CeA4iu00GJY', href: 'CeA4iu00GJY',
+	hash: { b3:1, b4:1, gaspump: 1, }, 
+},
 
-		
+{ 
+	title: 'B3/B4. Бензонасос. Чистка', ch: '10K_Kraft',
+	id: 'moAtlKpjec8', href: 'moAtlKpjec8',
+	hash: { b3:1, b4:1, gaspump: 1, }, 
+},
+{ 
+	title: 'B3. Лучший даже сегодня', ch: 'ИльдарKZ',
+	id: 'BK0h1csir6M', href: 'BK0h1csir6M',
+	hash: { b3:1, b4:1, review:1, testdrive:1, }, 
+},
+{ 
+	title: 'B3. Клапан ХХ', ch: 'Жизнь Авто',
+	id: '5dwiSFCjWxg', href: '5dwiSFCjWxg',
+	hash: { b3:1, b4:1, engine:1,  }, 
+},
+{ 
+	title: 'B3 1.8 ABS. КПП. Очень быстрый Passat', ch: 'Скорая помощь Вашему Агрегату',
+	id: '43pOb0twFqg', href: '43pOb0twFqg',
+	hash: { b3:1, b4:1, engine:1, gearbox:1, gearbox_m:1, }, 
+},
 
-		
+
+
+
+
 
 		
 
@@ -614,9 +900,9 @@ const arrYoutube = [
 	hash: { b4:1, }, 
 },
 
+
+
 */
-
-
 
 
 
@@ -657,25 +943,6 @@ const del222 = [
 		//{ id: '' 	, title: '' 		, },
 	],
 	arr: [
-
-
-
-		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
-		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
-		//{ href: '' , title: '' 													, cat: { total: 1 		, } , },
-
-
-
-
-
-
-
-
-
-
-		//{ href: '' , title: '' 											, cat: { engine: 1 		, } , },
-
-
 
 
 	],
@@ -720,44 +987,9 @@ arrYoutube.forEach( k => {
             <DL>
 
 
-                  <H3>Двигатель</H3>
-                  <DL>
 
 
 
-                        <H3>Свечи</H3>
-                        <DL>
-                              <A HREF="https://www.youtube.com/watch?v=U4I8KX5zzLY">Искра. Проверка (Д.Мазницын)</A>
-                              <A HREF="https://www.youtube.com/watch?v=n2VktnOSVZI">Заливает. Богатая смесь.</A>
-                              <A HREF="https://www.youtube.com/watch?v=Ztds_CEA7lw">Провода. Сопротивление (Д.Мазницын)</A>
-                        </DL>
-
-                        <A HREF="https://www.youtube.com/watch?v=ypPVtvlpXZk">Вал. Сальник. Замена (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=6r3wwrJFXe0">Заслонка зима/лето. Переключение. Проверка (B3 Д.Мазницын)</A>
-                        <A HREF="https://www.youtube.com/watch?v=xJRDScZw9LY">Зуммер. Пищит  на трассе (B3 RP)</A>
-                        <A HREF="https://www.youtube.com/watch?v=ZhKf6ZfgXKg">Капремонт 1 (B3 PF В.Кравченко)</A>
-                        <A HREF="https://www.youtube.com/watch?v=hgRVvWfZr0o">Капремонт 2. ГБЦ. Ремонт/сборка (B3 PF В.Кравченко)</A>
-                        <A HREF="https://www.youtube.com/watch?v=2QtBqCpKv2I">Капремонт 3. Сборка (B3 PF В.Кравченко)</A>
-                        <A HREF="https://www.youtube.com/watch?v=xjfVxeGIw7g">Клапан. Втулка направляющая. Замена (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=FuRyxAeDvno">Клапан вентиляции картерных газов. Замена (2E)</A>
-                        <A HREF="https://www.youtube.com/watch?v=2NlpRoFE8Lc">Насос масляный. Замена (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=JtZxZn9dJec">Номер. Где выбит</A>
-                        <A HREF="https://www.youtube.com/watch?v=YQS2_RyIfFg">Опора передняя. Замена (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=m2WfhY_YuEY">Перегрев 1 (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=rvic6Tp3GWY">Перегрев 2 (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=HLz6q470h1U">Плавают обороты (B3 Д.Мазницын)</A>
-                        <A HREF="https://www.youtube.com/watch?v=xcIp0v68Oj0">Разоборка (B3)</A>
-                        <A HREF="https://www.youtube.com/watch?v=eaAvCPpKgDE">Форсунка. Проверка на герметичность (B3 Д.Мазницын)</A>
-                        <A HREF="https://www.youtube.com/watch?v=UfMORGLJywU">Форсунка. Проверка работоспособности (B3 Д.Мазницын)</A>
-                  </DL>
-
-                  <H3>Зажигание</H3>
-                  <DL>
-                        <A HREF="https://www.youtube.com/watch?v=HBnKWK2HoWE">Замок. Разборка</A>
-                        <A HREF="https://www.youtube.com/watch?v=RIHA0V397sI">Замок. Контактная группа. Замена (B3, КАS 6 russian garage)</A>
-                        <A HREF="https://www.youtube.com/watch?v=uKz6P5lI1Hg">Замок. Контактная группа. Замена (B3, Д.Мазницын)</A>
-                        <A HREF="https://www.youtube.com/watch?v=iNvokiM5850">Угол. Установка (2E)</A>
-                  </DL>
 
                   <H3>Кузов</H3>
                   <DL>
@@ -973,17 +1205,6 @@ arrYoutube.forEach( k => {
             </DL>
 
 
-
-
-
-            <A HREF="https://www.youtube.com/channel/UCj1lrUHOfH1hU_wJp6cZzKA/videos">Allo_Karaganda</A>
-            <A HREF="https://www.youtube.com/channel/UC7oQ3Fg-FE1sLi4d2e23k4w/videos">Вячеслав Кравченко (VK Garage) </A>
-            <A HREF="https://www.youtube.com/c/dimonmaznicin81/videos">Дмитрий Мазницын</A>
-            <A HREF="https://www.youtube.com/channel/UCNIEALUW5diY4pi2CLCL2Ww/videos">Игорёха 26RUS</A>
-            <A HREF=""></A>
-            <A HREF=""></A>
-            <A HREF=""></A>
-            <A HREF=""></A>
 
 
       </DL>
