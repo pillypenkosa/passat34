@@ -102,6 +102,10 @@ const arrYoutubeNav = [
 { id: 'systemFuel' 		, title: '--- Топливная ---' 	, hash: 'ТопливнаяСистема' 		, descr: 'Топливная система' 				, },
 { id: 'pumpGasoline' 	, title: 'Бензонасос' 			, hash: 'Бензонасос' 			, descr: 'Бензонасос' 						, },
 
+
+
+{ id: 'injector' 		, title: 'Форсунки' 			, hash: 'Форсунки' 				, descr: 'Форсунки' 						, },
+
  
 
 
@@ -116,6 +120,11 @@ const arrYoutubeNav = [
 
 { id: 'brakes' 			, title: 'Тормоз' 				, hash: 'Тормоз' 		, descr: 'Тормоз' 									, },
 { id: 'gaspump' 		, title: 'Бензонасос' 			, hash: 'Бензонасос' 	, descr: 'Бензонасос' 								, },
+
+
+
+{ id: 'electric' 			, title: '--- Електрика ---' 	, hash: 'Електрика' 			, descr: 'Електрика' 						, },
+
 
 
 
@@ -1081,20 +1090,64 @@ UfMORGLJywU "> Форсунка. Проверка работоспособнос
 	id: 'meWHXfhZvTs', href: 'meWHXfhZvTs',
 	hash: { _2e:1, diagnostics:1, grm:1, }, 
 },
-
-
 { 
-	title: 'B3. 3 способа проверки датчика Холла распределителя зажигания', ch: '',
+	title: 'B3. 3 способа проверки датчика Холла распределителя зажигания', ch: 'Абдулла Андыбаев',
 	id: 'E4KWS39clhs', href: 'E4KWS39clhs',
 	hash: { b3:1, ignition:1, distributor:1, sensorHoll:1, }, 
+},
+{ 
+	title: '2E. Чистка форсунок', ch: 'Losev Garage',
+	id: '8a3LgV6q2gE', href: '8a3LgV6q2gE',
+	hash: { _2e:1, repair:1, injector:1, }, 
+},
+{ 
+	title: '2E. Снятие установка форсунок', ch: 'Александр Копейкин',
+	id: 'beemM0Ece50', href: 'beemM0Ece50',
+	hash: { _2e:1, repair:1, injector:1, }, 
+},
+{ 
+	title: '2E. Снятие форсунки', ch: 'tashki',
+	id: 'YUyS2sEPxZg', href: 'YUyS2sEPxZg',
+	hash: { _2e:1, repair:1, injector:1, }, 
+},
+{ 
+	title: 'Сделайте ЭТО и автомобиль будет ехать как новый… Димексид мне в форсунки!!', ch: 'Denis МЕХАНИК',
+	id: 'IGhTB_MZMhg', href: 'IGhTB_MZMhg',
+	hash: { repair:1, injector:1, }, 
+},
+{ 
+	title: 'B3. Чистка форсунок пассат', ch: 'Александр AtoM',
+	id: 'uZlhhCkSdG0', href: 'uZlhhCkSdG0',
+	hash: { b3:1, repair:1, injector:1, }, 
+},
+{ 
+	title: 'B4. Проверка бензиновых форсунок на стенде', ch: 'METALL SURGERY',
+	id: 'OANHExwRqDM', href: 'OANHExwRqDM',
+	hash: { b3:1, repair:1, injector:1, }, 
+},
+{ 
+	title: 'Как узнать модель двигателя Фольксваген Пассат', ch: 'Yuriy777888',
+	id: 'TiwrCHkLyN0', href: 'TiwrCHkLyN0',
+	hash: { engine:1, }, 
+},
+{ 
+	title: 'ABF. Ревизия топливной рампы с двигателя', ch: 'EVGENIK',
+	id: 'lnLvtAO_abw', href: 'lnLvtAO_abw',
+	hash: { b3:1, repair:1, injector:1, }, 
+},
+{ 
+	title: 'Ультразвуковая промывка форсунок!!!! Это надо видеть', ch: 'Ремонт Авто в России',
+	id: 'VWmWmgJ0ADc', href: 'VWmWmgJ0ADc',
+	hash: { b3:1, repair:1, injector:1, }, 
 },
 
 
 
-
-
-
-
+{ 
+	title: 'B3. Значение реле в блоке предохранителей', ch: 'KIR MEN BY',
+	id: 'rc99RKzj-_E', href: 'rc99RKzj-_E',
+	hash: { b3:1, repair:1, electric:1, }, 
+},
 
 
 
