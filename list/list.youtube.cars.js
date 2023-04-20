@@ -21,8 +21,7 @@ const arrYoutubeNav = [
 { id: 'body' 				, title: '--- Кузов ---' 		, hash: 'Кузов' 		, descr: 'Кузов' 									, },
 { id: 'lkp' 				, title: 'ЛКП' 					, hash: 'ЛКП' 			, descr: 'Лако-красочное покрытие' 					, },
 { id: 'isolationNoise' 		, title: 'Шумоизоляция' 		, hash: 'Шумоизоляция' 	, descr: 'Шумоизоляция' 							, },
-
-
+{ id: 'wiper' 				, title: 'Склоочисник' 			, hash: 'Склоочисник' 	, descr: 'Склоочисник' 							, },
 
 
  
@@ -1015,7 +1014,7 @@ UfMORGLJywU "> Форсунка. Проверка работоспособнос
 { 
 	title: 'B3. Ремонт трапеции дворников', ch: 'Жизнь Авто',
 	id: 'LDAuVH6lsh4', href: 'LDAuVH6lsh4',
-	hash: { _2e:1, repair:1, body:1, }, 
+	hash: { _2e:1, repair:1, body:1, wiper:1, }, 
 },
 { 
 	title: '2E. Неисправен датчик температуры. Причины', ch: 'Жизнь Авто',
@@ -1140,14 +1139,57 @@ UfMORGLJywU "> Форсунка. Проверка работоспособнос
 	id: 'VWmWmgJ0ADc', href: 'VWmWmgJ0ADc',
 	hash: { b3:1, repair:1, injector:1, }, 
 },
-
-
-
 { 
 	title: 'B3. Значение реле в блоке предохранителей', ch: 'KIR MEN BY',
 	id: 'rc99RKzj-_E', href: 'rc99RKzj-_E',
 	hash: { b3:1, repair:1, electric:1, }, 
 },
+{ 
+	title: 'B3. ABS. Как поменять бегунок на трамблёре', ch: 'свой авторемонт',
+	id: 'iq5KdeLuD-w', href: 'iq5KdeLuD-w',
+	hash: { b3:1, repair:1, distributor:1,  }, 
+},
+{ 
+	title: 'B3. Замена трамблёрной крышки, появились нюансы', ch: 'KIR MEN BY',
+	id: 'mXyq0ER88PI', href: 'mXyq0ER88PI',
+	hash: { b3:1, repair:1, distributor:1,  }, 
+},
+{ 
+	title: 'B3. Повреждение трамблерной крышки. От чего?! Замена', ch: 'KIR MEN BY',
+	id: 'xmlxABYpftc', href: 'xmlxABYpftc',
+	hash: { b3:1, repair:1, distributor:1,  }, 
+},
+{ 
+	title: 'Как проверить Датчик Холла от А до Я. Как работает и как устроен датчик холла', ch: 'Андрей Скляров',
+	id: 'DuahEyUZrsI', href: 'DuahEyUZrsI',
+	hash: { b3:1, repair:1, distributor:1, sensorHoll:1, }, 
+},
+{ 
+	title: 'B4. Ремонт моторчика заднего дворника', ch: 'Дмитрий Осипенко',
+	id: 'zZ8TWtLZR6I', href: 'zZ8TWtLZR6I',
+	hash: { b4:1, repair:1, body:1, wiper:1, }, 
+},
+{ 
+	title: 'B3. Малоизвестный режим дворников', ch: 'Can You? Do It!',
+	id: 'tvrRC3B6W-A', href: 'tvrRC3B6W-A',
+	hash: { b3:1, repair:1, body:1, wiper:1, }, 
+},
+{ 
+	title: 'Тюнингованный задний дворник', ch: 'Гаражный хит - Garage hit.',
+	id: 'augabgvt1L4', href: 'augabgvt1L4',
+	hash: { tuning:1, body:1, wiper:1, }, 
+},
+
+
+
+
+
+
+
+
+
+
+
 
 
 
